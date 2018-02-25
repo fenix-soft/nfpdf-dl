@@ -1,4 +1,4 @@
-# nfpdf-dl 
+#nfpdf-dl 
  
 "nodefiles pdf downloader" **bash script**
 
@@ -18,16 +18,16 @@ Download the pdf file without wasting your time!
  
 Note: IT WORKS ONLY ON THE PDF LINKS !!
 
-## USE:
+##USE:
 
 nfpdf-dl [link nodefiles] [pdfname]
 
-## Required Dependencies:
+##Required Dependencies:
 curl, wget, seed, grep
 
 ---
 
-## italian version:
+##italian version:
 
 **nfpdf-dl**  è uno script progettato per scaricare i file **PDF** dal sito internet:
 
