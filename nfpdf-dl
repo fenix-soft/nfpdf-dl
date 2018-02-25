@@ -1,0 +1,31 @@
+#!/bin/bash
+# nfpdf-dl V1.0 20171015
+
+# recupera solo i link  pdf di riviste e quotidiani da questo indirizzo "https://nodefiles.com/users/magazine" perchè sfrutta un bug di nodefiles quando fa l'anteprima dei pdf mettendo un link diretto in chiro.. questo script lo recupera e lo salva
+# dipendenze curl, wget 
+
+
+surce=$1
+nome=$2
+
+if [ "$surce" = "-h" ]; then
+   
+   echo " "
+   echo "------------------------"
+   
+   echo "use: nfpdf-dl [link nodefiles] [pdfname]"   
+   echo "------------------------- "
+   echo " "
+    exit   
+fi
+
+
+curl $surce | grep "https://docs.google.com/gview" |sed -e 's/\"/\n/g' | grep "https://docs.google.com/gview" |sed -e 's/=/\n/g' | grep "node" | sed -e 's/&/\n/g' | grep "node"> link-riviste-dl.txt
+echo " "
+T=`cat link-riviste-dl.txt`
+echo $T
+echo " "
+wget $T -O $nome
+
+# for debug comment
+rm link-riviste-dl.txt
