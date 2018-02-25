@@ -4,7 +4,7 @@
 
 ## English version:
 
-** nfpdf-dl ** is a script designed to download ** PDF ** files from the website:
+**nfpdf-dl** is a script designed to download **PDF** files from the website:
 
   https://nodefiles.com
  
