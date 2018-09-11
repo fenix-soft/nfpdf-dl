@@ -22,7 +22,8 @@ Note: IT WORKS ONLY ON THE PDF LINKS !!
 
 nfpdf-dl [link nodefiles] [pdfname]
 
-##Required Dependencies:
+## Required Dependencies:
+
 curl, wget, seed, grep
 
 ---
